@@ -23,7 +23,7 @@ A simple real-time file-sharing application built with **React**, **Node.js**, a
 ## 📌 Limitations & Future Scope
 
 - 🔐 No backend authentication — login and user management not implemented yet.
-- 🖥️ Currently works only on the **same PC** or **local network**.
+- 🖥️ Currently works only on the **same PC**
 
 - 🌐 **Future Improvements:**
   - Support for internet-based transfers (across networks)
