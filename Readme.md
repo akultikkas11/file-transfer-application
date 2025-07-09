@@ -40,7 +40,7 @@ A simple real-time file-sharing application built with **React**, **Node.js**, a
 - npm install
 - npm start
 
-### Run Backend (Socket.IO Server)
+### Run Frontend
 
 - cd client
 - npm install
