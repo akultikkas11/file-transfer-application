@@ -25,6 +25,8 @@ io.on("connection", (socket) => {
   });
 
   socket.on("receiver-join", (data) => {
+    console.log("📨 Receiver joined:", data.uid, "Sender UID:", data.sender_uid);
+
     socket.join(data.uid);
     socket.to(data.sender_uid).emit("init", data.uid);
   });

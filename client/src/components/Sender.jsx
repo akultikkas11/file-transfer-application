@@ -18,7 +18,10 @@ const Sender = () => {
   const filesListRef = useRef(null);
 
   useEffect(() => {
+    console.log("👀 Sender socket ID:", socket.id);
+
     socket.on('init', (uid) => {
+      console.log("✅ Received init from Receiver with UID:", uid);
       setReceiverID(uid);
       setShowFS(true);
     });
