@@ -3,7 +3,8 @@ import { io } from 'socket.io-client';
 import download from 'downloadjs';
 import '../App.css';
 
-const socket = io('http://localhost:5000');
+// const socket = io('http://localhost:5000');
+const socket = io('https://file-transfer-joez.onrender.com');
 
 function generateID() {
   return `${Math.trunc(Math.random() * 999)} - ${Math.trunc(Math.random() * 999)} - ${Math.trunc(Math.random() * 999)}`;
