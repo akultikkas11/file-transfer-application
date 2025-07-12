@@ -6,7 +6,7 @@ import '../App.css';
 const socket = io('https://file-transfer-joez.onrender.com');
 
 function generateID() {
-  return `${Math.trunc(Math.random() * 999)} - ${Math.trunc(Math.random() * 999)} - ${Math.trunc(Math.random() * 999)}`;
+  return `${Math.trunc(Math.random() * 999)}-${Math.trunc(Math.random() * 999)}-${Math.trunc(Math.random() * 999)}`;
 }
 
 const Sender = () => {
