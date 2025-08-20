@@ -25,7 +25,8 @@ const Sender = () => {
 
     useEffect(()=>{
         //Connects to the server.
-        socket = io("http://localhost:5000");
+        // socket = io("http://localhost:5000");
+        socket = io('https://file-transfer-joez.onrender.com');
 
         //Sender changes the UI once the room is created.
         socket.on('room_created', ()=>{

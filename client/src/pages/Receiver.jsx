@@ -30,7 +30,8 @@ const Receiver = () => {
     const [fileName, setFileName] = useState("received_file");
 
     useEffect(()=>{
-        socket = io("http://localhost:5000");
+        // socket = io("http://localhost:5000");
+        socket = io('https://file-transfer-joez.onrender.com');
     }, []);
 
     useEffect(()=>{
