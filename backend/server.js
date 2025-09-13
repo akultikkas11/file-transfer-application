@@ -21,7 +21,8 @@ io.on('connection', (socket)=>{
     // console.log(`A user connected...${socket.id}`);
 
     socket.on("send_file_chunk", (data)=>{
-        socket.broadcast.emit("receive_file_chunk", data);
+        // socket.broadcast.emit("receive_file_chunk", data);
+        socket.to(socket.roomID).emit("receive_file_chunk", data);
     });
 
     socket.on("file_end", ()=>{
